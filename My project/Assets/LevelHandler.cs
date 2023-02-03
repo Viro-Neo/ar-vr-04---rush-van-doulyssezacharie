@@ -22,6 +22,7 @@ public class LevelHandler : MonoBehaviour
     {
         return actualLevel;
     }
+
     void Start()
     {
         actualLevel = Level.EASY;
