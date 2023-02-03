@@ -137,7 +137,12 @@ PlayerSettings:
   bundleVersion: 0.1
   preloadedAssets:
   - {fileID: 6568920528050151886, guid: 7a35b4cd3980c44469afa981aff2938b, type: 2}
+<<<<<<< HEAD
+  - {fileID: 4202269502206717902, guid: f146f1c7933f3c6638fd559d3ca9c433, type: 2}
+  - {fileID: 11400000, guid: 5004937c1f2533243934e9055ab4e016, type: 2}
+=======
   - {fileID: 7455496083571189132, guid: a82a3ce84bb0aa944ac02c6ba832d8a6, type: 2}
+>>>>>>> origin/main
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -156,7 +161,8 @@ PlayerSettings:
   resetResolutionOnWindowResize: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Android: com.DefaultCompany.Myproject
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -724,7 +730,7 @@ PlayerSettings:
   allowUnsafeCode: 0
   useDeterministicCompilation: 1
   enableRoslynAnalyzers: 1
-  selectedPlatform: 0
+  selectedPlatform: 2
   additionalIl2CppArgs: 
   scriptingRuntimeVersion: 1
   gcIncremental: 1

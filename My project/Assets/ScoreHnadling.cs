@@ -8,7 +8,13 @@ public class ScoreHnadling : MonoBehaviour
     int score;
     public Text scoreText;
 
-    void scoreIncrease(int addValue)
+
+    public int getScore()
+    {
+        return score;
+    }
+
+    public void scoreIncrease(int addValue)
     {
         score += addValue;
         scoreText.text = "Score\n".ToString() + score.ToString();
@@ -29,5 +35,6 @@ public class ScoreHnadling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        scoreIncrease(5);
     }
 }
