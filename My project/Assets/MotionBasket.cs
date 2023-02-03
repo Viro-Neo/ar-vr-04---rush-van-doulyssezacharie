@@ -9,14 +9,18 @@ public class MotionBasket : MonoBehaviour
     public float roatationSpeedz;
     Vector3 newRotation;
     // Start is called before the first frame update
+    public LevelHandler level;
     void Start()
     {
         newRotation = new Vector3(roatationSpeedx, roatationSpeedy, roatationSpeedz);
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        newRotation = new Vector3(roatationSpeedx * ((float)level.GetLevel()) / 2,
+                                    roatationSpeedy * ((float)level.GetLevel()) / 2,
+                                    roatationSpeedz * ((float)level.GetLevel()) / 2);
         gameObject.GetComponent<Transform>().Rotate(newRotation);
     }
+    // Update is called once per frame
 }
